@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="checkout">
+        <h2>Información de pago</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio unitario</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RTX 4070</td>
+              <td>1</td>
+              <td>$1600.00</td>
+              <td>$1600.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total</td>
+              <td>$1600.00</td>
+            </tr>
+          </tfoot>
+        </table>
+        <form>
+          <label for="name">Nombre completo:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="direccion">Direccion de envio:</label>
+          <input type="text" id="direccion" name="direccion" required>
+          <label for="card-number">Número de tarjeta:</label>
+          <input type="number" id="card-number" name="card-number" required maxlength="10">
+          <label for="card-expiry">Fecha de expiración:</label>
+          <input type="date" id="card-expiry" name="card-expiry" required>
+          <label for="card-cvc">CVC:</label>
+          <input type="number" id="card-cvc" name="card-cvc" required minlength="3" maxlength="3">
+          <button type="submit">Pagar</button>
+        </form>
+      </div>
+      
+      
+    
+</body>
+</html>
